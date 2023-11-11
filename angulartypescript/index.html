@@ -1,0 +1,28 @@
+<html>
+    <!-- < src="p.js"></> -->
+
+
+
+    <div id="outer">
+        <div id="inner">
+          Click me!
+        </div>
+      </div>
+<script>
+    const outerDiv = document.getElementById('outer');
+const innerDiv = document.getElementById('inner');
+
+function handleEvent(event) {
+  console.log(`Event type: ${event.type}, Target: ${event.target.id}`);
+}
+
+// Event Bubbling
+// outerDiv.addEventListener('click', handleEvent);
+// innerDiv.addEventListener('click', handleEvent);
+
+// Event Capturing
+outerDiv.addEventListener('click', handleEvent, true);
+innerDiv.addEventListener('click', handleEvent, true);
+
+</script>      
+</html>

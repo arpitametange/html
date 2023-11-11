@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title> First Program </title>
+   <style>
+    h1{
+            width: 500px;
+            height: 50px;
+            visibility: hidden;
+        }
+    h1,h2,h3{
+        border: 1px solid cadetblue;
+    }
+    h2,h3{
+        display: inline-block;
+        width: 103px;
+    }
+   </style>
+</head>
+
+<body>
+    <h1> This is my first html program.....   </h1>
+    <h2> This is h2 heading </h2>
+    <h3> This is h3 heading </h3>
+    <h4> This is h4 heading </h4>
+    <br> <br>
+     <a href="#"> Facebook Profile </a>
+     <a href="#"> Linked Profile </a>
+     <a href="#"> Git Profile </a>
+    <p>
+       There’s nothing more exciting than starting the New Year with buying your favorite things. When you think of
+    </p>
+    <p id="l">
+     There’s nothing more exciting than starting the New Year with buying your favorite things. When you think of
+  </p>
+</body>
+<script>
+    let documentjd=document.getElementById('l')
+    documentjd.style.color='red'
+    console.log(documentjd.innerHTML);
+    let r=document.createElement('h1')
+    let t=document.createTextNode('hollow guys welcome to the channel')
+    document.body.appendChild(r)
+    r.appendChild(t)
+let sel=document.querySelector('p')
+let p=document.createElement('p')
+sel.appendChild(p)
+let create=document.createTextNode('loremdkjafjd')
+p.appendChild(create)
+</script>
+</html>

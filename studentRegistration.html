@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>student registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=ltim&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        input[type='text'] , input[type='date'],select,textarea,::placeholder ,input[type='tel']{
+            color: rgb(124, 8, 116);
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        label {
+            color: rgb(34, 137, 182);
+        
+        }
+    
+        span{
+            font-family: 'ltim', cursive;     
+            font-weight: bold; 
+            color: #8b5b5b;
+
+        }
+        table{
+            font-family: 'Roboto Condensed', sans-serif;   
+         
+         }
+     button{
+                font-family: 'Roboto Condensed', sans-serif;   
+                text-shadow:  2px 2px gray;
+            }
+    input[type='submit']{
+        width: 40vh;
+    }
+.m ,input[type='file']{
+    color:rgb(124, 8, 116)
+}
+#edu{
+    background: rgb(124, 8, 116);
+    color: whitesmoke;
+}
+   
+    </style>
+</head>
+<body>
+    <fieldset>
+<legend>
+    <span>Student_Registration_Form</span>
+</legend>    
+    <form action="">
+<table>
+   
+    
+    <tr>
+        <td> <label> First Name : </label> </td> 
+        <td >  <input type="text" placeholder='Max 10 chr' maxlength="10">   </td>  
+     </tr>
+    <tr>
+               <td> <label> Last Name : </label> </td> 
+               <td >  <input type="text" placeholder="Max 10 chr" >   </td>  
+            </tr>
+            <tr>
+                <td> <label> Age :</label></td>
+                <td> <input type="tel" max="98" placeholder="add the age"> </td>
+            </tr>
+            <tr>
+                <td>  <label> Date Of Birth :</label>   </td>
+                <td> <input type="date">   </td>
+             </tr>
+             <tr ><td><label for="">Education :</label></td>
+                <td><select name="" id="edu">
+                    <option value="">msc</option>
+                    <option value="">bsc</option>
+                </select></td>
+             </tr>
+             <tr> 
+                <td> <label> Present Address : </label>  </td>
+                <td>  <textarea rows="5" cols="40"></textarea>
+                     </td>
+            </tr>
+            <tr> 
+                <td> <label> Select Gender :</label> </td>
+                <td> 
+                    <input type="radio" name="gender" > <label class="m"> Male </label>
+                    <input type="radio" name="gender"> <label class="m"> Female </label>
+                    <input type="radio" name="gender"> <label class="m"> Others </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Select you hobby  :</label>  </td>
+                <td>  
+                    <input type="checkbox"> <label class="m"> Reading </label>
+                    <input type="checkbox"> <label class="m"> Watching Motivation Videos </label>
+                    <input type="checkbox"> <label class="m"> Dancing </label>
+                </td>
+            </tr>
+            <tr>
+                <td>  <label> Country :</label>   </td>
+                <td> <input type="text" value="India" readonly>   </td>
+             </tr>
+            <tr>
+                <td> <label> Upload Profile Photo :</label> </td>
+                <td> <input type="file"> </td>
+            </tr>
+
+            <tr> 
+                <td><label for="">Upload Graduation Mark sheets :</label> </td>
+                <td> <input type="file" multiple > </td>
+            </tr>
+            <tr>
+                <td> <button type="submit" style="background-color: rgb(183, 83, 192) ; font-weight: bolder; width: 63px; height: 33px;  color: rgb(235, 220, 220);margin: 23px" > Submit </button>  </td>
+                <td>  <button type="reset" style="background-color:  rgb(177, 108, 183); font-weight: bolder; width: 63px; height: 33px;  color: rgb(235, 220, 220);"> Reset </button>  </td>
+            </tr>
+        </tbody>
+        </table>
+    </form>
+
+</fieldset>
+
+</table>
+</body>
+</html>

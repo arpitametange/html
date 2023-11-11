@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action=""> 
+        <!-- <h1>Email Application Form</h1> -->
+        <fieldset>
+            <legend>
+                <span>Emp Application Form</span>
+
+            </legend>  
+    <table>
+       <tbody>
+        <tr>
+            <td><label for="">Full Name:</label></td>
+            <td> <input type="text" autofocus required max="40"></td>
+        </tr>
+        <tr>
+            <td><label>Email Address:</label> </td>
+            <td> <input type="text" placeholder="abc@gmail.com"></td>
+
+        </tr>
+        <tr>
+            <td><label for="">Password:</label></td>
+            <td> <input type="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Contact Number</label></td>
+            <td><input type="number" required></td>
+
+        </tr>
+        <tr>
+            <td><label for="">Profile Photo</label></td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td><label for="" >Date of Birth</label></td>
+            <td><input type="date" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Gender</label>
+            </td>
+            <td><input type="radio" name="gender"><label >Male</label> 
+            <input type="radio" name="gender"><label >Female</label>
+            <input type="radio" name="gender"><label >Transgender</label>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="">Marital Status</label></td>
+            <td><input type="radio" name="status"><label for="">Yes</label>
+                <input type="radio" name="status"><label for="">No</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Known Tools & Technology:</label></td>
+            <td><input type="checkbox"> <label for="">Angular</label> 
+            <input type="checkbox"><label for="">React</label> 
+            <input type="checkbox"> <label for="">Python</label> 
+            <input type="checkbox"> <label for="">Java</label> 
+            <input type="checkbox"> <label for="">Jenkin</label> 
+            <input type="checkbox"> <label for="">GIT</label> 
+            <input type="checkbox"> <label for="">Database</label> </td>
+        </tr>
+        <tr>
+            <td><label for="">Profile:</label></td>
+            <td>
+                <select name="" id="">
+                    <option value="">UI Developer</option>
+                    <option value="">Backend Developer</option>
+                    <option value="">full stack Developer</option>
+                    <option value="">Devops Engineer</option>
+                    <option value="">Tester</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Country</label></td>
+            <td><input type="text" value="India" readonly></td>
+        </tr>
+        <tr>
+        <td><label for="">Present Address</label></td>
+        <td><textarea name="" id="" cols="40" rows="7"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="Clear"></td>
+
+        </tr>
+        
+       </tbody>
+      
+    </table>
+</fieldset>   
+
+</form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Accessories Table</title>
+    <style>
+        table, th,td,tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+    <link rel="icon" href="/developer.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <th>sr no</th>
+            <th colspan="2">names</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Pen</td>
+                <td>book
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">102</td>
+                <td>Pen</td>
+                <td>book
+                </td>
+            </tr>
+            <tr>
+
+                <td>Pen</td>
+                <td>book
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <ul>
+        <li>Flexible</li>
+        <li>Available</li>
+        <li>Magical</li>
+    </ul>
+<h1 id="r">this  is the title</h1>
+<a href="">gooogle</a>
+<p class="tec">jfajlk</p>
+<button id="btn" type="button">button</button>
+<h3 onclick="show()">onclick</h3>
+
+
+<h1>heeading</h1>
+<img src="/developer.png">
+<a href="/developer.png" target="_blank">link</a>
+<!-- <video autoplay muted controls >
+    <source src="/vdo 2.mp4" type="video/mp4">
+</video>
+<audio autoplay controls muted>
+    <source src="/audio (1).mp3" type="audio/mp3">
+</audio> -->
+
+<details>
+    <summary>summary</summary>
+    <p>this is te summary</p>
+</details>
+<fieldset>
+    <legend>form</legend>
+    <form action=""><input type="text">
+    <input type="button" value="buttton">
+    <select name="" id=""><option value="">djkfk</option></select>
+    </form>
+</fieldset>
+<a href="/developer.png" target="frame">frame</a>
+<iframe src="" name="frame" height="340px" width="200px"  ></iframe>
+<iframe src="" frameborder="0"></iframe>
+    <script>
+        function show() {
+           console.log('this is the show'); 
+        }
+let ele=document.getElementById('r')
+// ele.style.color='red'
+console.log(ele.innerHTML);
+let create=document.createElement('div')
+let textnotde=document.createTextNode('this is the div')
+create.appendChild(textnotde)
+document.body.appendChild(create)
+create.style.color='red'
+let ip=document.querySelector('a')
+let re=ip.getAttribute('href')
+console.log(re);
+create.removeChild(textnotde)
+let buttton=document.querySelector('#btn')
+buttton.addEventListener("click",()=>{
+let input=prompt("enter")
+let crerw=document.createElement('p')
+let text=document.createTextNode(input)
+crerw.appendChild(text)
+document.body.appendChild(crerw)
+})
+    </script>
+</body>
+</html>
